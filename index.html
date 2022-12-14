@@ -30,9 +30,10 @@
 
     </div>
 
-    <h2> Audio Examples 1 </h2>
+    <h2> Audio Examples </h2>
+    <h3> Digital Domain Example 1</h3>
     <p>
-        <b>Tips:</b> We recommend <b>not</b> to listen to the <b>origin</b> audio samples and not to read the transcript <b>before</b> listening to the noisy audio samples. This priori knowledge will weaken the jamming effectiveness of these noises for human ear.
+        <b>Tips:</b> We recommend <b>not</b> to listen to the <b>origin</b> audio samples and not to read the transcript <b>before</b> listening to the noisy audio samples. These priori knowledge will weaken the jamming effectiveness of these noises for human ear.
     </p>
     <div style="margin-top=5em;">
         <table>
@@ -121,7 +122,7 @@
 
         </table>
 
-        <h2> Audio Examples 2 </h2>
+        <h3> Digital Domain Example 2 </h3>
         <div style="margin-top=5em;">
             <table>
                 <tr>
@@ -205,6 +206,81 @@
                 </tr>
                 <tr>
                     <td> <b>Transcript:</b> Approaching the dining table he carefully placed the article in the centre and removed the cloth. </td>
+                </tr>
+    
+            </table>
+
+            <h3> Real World Examples </h3>
+            <div style="margin-top=5em;">
+            <table>
+                <tr>
+                <td> Noise Type </td>
+                <td> Noisy Audio (SNR=0) </td>
+                <td> Denoised Noisy Audio </td>
+                </tr>
+
+                <tr>
+                    <td> Our Noise </td>
+                    <td><audio controls>
+                        <source src="./assets/real_world_audio/our.wav", type="audio/wav">
+                        Your browser does not support the <code>audio</code> element.
+                    </audio></td>
+                    <td><audio controls>
+                        <source src="./assets/real_world_audio/our_enh.wav", type="audio/wav">
+                        Your browser does not support the <code>audio</code> element.
+                    </audio></td>
+                </tr>
+
+                <tr>
+                    <td> Backdoor </td>
+                    <td><audio controls>
+                        <source src="./assets/real_world_audio/backdoor.wav", type="audio/wav">
+                        Your browser does not support the <code>audio</code> element.
+                    </audio></td>
+                    <td><audio controls>
+                        <source src="./assets/real_world_audio/backdoor_enh.wav", type="audio/wav">
+                        Your browser does not support the <code>audio</code> element.
+                    </audio></td>
+                </tr>
+
+                <tr>
+                    <td> Patronus </td>
+                    <td><audio controls>
+                        <source src="./assets/real_world_audio/patronus.wav", type="audio/wav">
+                        Your browser does not support the <code>audio</code> element.
+                    </audio></td>
+                    <td><audio controls>
+                        <source src="./assets/real_world_audio/Patronus_enh.wav", type="audio/wav">
+                        Your browser does not support the <code>audio</code> element.
+                    </audio></td>
+                </tr>
+
+                <tr>
+                    <td> A Typical <br> Commercial Device </td>
+                    <td><audio controls>
+                        <source src="./assets/real_world_audio/device.wav", type="audio/wav">
+                        Your browser does not support the <code>audio</code> element.
+                    </audio></td>
+                    <td><audio controls>
+                        <source src="./assets/real_world_audio/Device_enh.wav", type="audio/wav">
+                        Your browser does not support the <code>audio</code> element.
+                    </audio></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td> Original Audio (19-198-0000.wav + 19-198-0001.wav in Librispeech train-clean-100) </td>
+                </tr>
+    
+                <tr>
+                    <td><audio controls>
+                        <source src="./assets/real_world_audio/real_world_origin.wav", type="audio/wav">
+                        Your browser does not support the <code>audio</code> element.
+                    </audio></td>
+                </tr>
+                <tr>
+                    <td> <b>Transcript:</b> Northanger Abbey. This little work was finished in the year eighteen o three, and intended for immediate publication. </td>
                 </tr>
     
             </table>
