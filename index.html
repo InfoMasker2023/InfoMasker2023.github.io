@@ -104,187 +104,197 @@
             </tr>
         </table>
 
-        <br>
         <table>
             <tr>
-                <td> Original Audio (2300-131720-0010.wav in Librispeech test-clean) </td>
-            </tr>
+                <td> Original Audio <br> (2300-131720-0010 in Librispeech test-clean) </td>
 
-            <tr>
                 <td><audio controls>
                     <source src="./assets/audio/1_origin.wav", type="audio/wav">
                     Your browser does not support the <code>audio</code> element.
                 </audio></td>
             </tr>
-            <tr>
-                <td> <b> Transcript: </b> It could not be used for electroplating or deposition, nor could it charge storage batteries. All of which are easily within the ability of the direct current. </td>
-            </tr>
+
 
         </table>
 
-        <h3> Digital Domain Example 2 </h3>
+        <script>
+            function show_hide_text(section_name) {
+                var x = document.getElementById(section_name);
+                if(x.style.display == 'none'){
+                    x.style.display = 'block';
+                }else{
+                    x.style.display = 'none';
+                }
+            }
+        </script>
+
+        <br>
+        <button onclick="show_hide_text('transcript1')" >Click To Show/Hide The Transcript</button>
+        <br>
+        <div id="transcript1" style="display:none"><p><b>Transcript: </b> It could not be used for electroplating or deposition, nor could it charge storage batteries. All of which are easily within the ability of the direct current.</p></div>
+
+
+
+    <h3> Digital Domain Example 2 </h3>
+    <div style="margin-top=5em;">
+        <table>
+            <tr>
+            <td> Noise Type </td>
+            <td> Noisy Audio (SNR=0) </td>
+            <td> Denoised Noisy Audio </td>
+            </tr>
+
+            <tr>
+                <td> Our Noise </td>
+                <td><audio controls>
+                    <source src="./assets/audio/2_our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio/2_our_enhanced.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> White Noise </td>
+                <td><audio controls>
+                    <source src="./assets/audio/2_white_noise.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio/2_white_noise_enhanced.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td>1 Series Speech Noise </td>
+                <td><audio controls>
+                    <source src="./assets/audio/2_speech_1.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio/2_speech_1_enhanced.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td>2 Series Speech Noise </td>
+                <td><audio controls>
+                    <source src="./assets/audio/2_speech_2.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio/2_speech_2_enhanced.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td>3 Series Speech Noise </td>
+                <td><audio controls>
+                    <source src="./assets/audio/2_speech_3.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio/2_speech_3_enhanced.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td> Original Audio <br> (4992-41806-0013 in Librispeech test-clean) </td>
+
+                <td><audio controls>
+                    <source src="./assets/audio/2_origin.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
+
+        <br>
+        <button onclick="show_hide_text('transcript2')" >Click To Show/Hide The Transcript</button>
+        <br>
+        <div id="transcript2" style="display:none"><p><b>Transcript:</b> Approaching the dining table he carefully placed the article in the centre and removed the cloth.</p></div>
+
+
+    <h3> Real World Examples </h3>
         <div style="margin-top=5em;">
-            <table>
-                <tr>
-                <td> Noise Type </td>
-                <td> Noisy Audio (SNR=0) </td>
-                <td> Denoised Noisy Audio </td>
-                </tr>
-    
-                <tr>
-                    <td> Our Noise </td>
-                    <td><audio controls>
-                        <source src="./assets/audio/2_our.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                    <td><audio controls>
-                        <source src="./assets/audio/2_our_enhanced.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                </tr>
-    
-                <tr>
-                    <td> White Noise </td>
-                    <td><audio controls>
-                        <source src="./assets/audio/2_white_noise.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                    <td><audio controls>
-                        <source src="./assets/audio/2_white_noise_enhanced.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                </tr>
-    
-                <tr>
-                    <td>1 Series Speech Noise </td>
-                    <td><audio controls>
-                        <source src="./assets/audio/2_speech_1.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                    <td><audio controls>
-                        <source src="./assets/audio/2_speech_1_enhanced.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                </tr>
-    
-                <tr>
-                    <td>2 Series Speech Noise </td>
-                    <td><audio controls>
-                        <source src="./assets/audio/2_speech_2.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                    <td><audio controls>
-                        <source src="./assets/audio/2_speech_2_enhanced.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                </tr>
-    
-                <tr>
-                    <td>3 Series Speech Noise </td>
-                    <td><audio controls>
-                        <source src="./assets/audio/2_speech_3.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                    <td><audio controls>
-                        <source src="./assets/audio/2_speech_3_enhanced.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                </tr>
-            </table>
-    
-            <br>
-            <table>
-                <tr>
-                    <td> Original Audio (4992-41806-0013.wav in Librispeech test-clean) </td>
-                </tr>
-    
-                <tr>
-                    <td><audio controls>
-                        <source src="./assets/audio/2_origin.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                </tr>
-                <tr>
-                    <td> <b>Transcript:</b> Approaching the dining table he carefully placed the article in the centre and removed the cloth. </td>
-                </tr>
-    
-            </table>
+        <table>
+            <tr>
+            <td> Noise Type </td>
+            <td> Noisy Audio (SNR=0) </td>
+            <td> Denoised Noisy Audio </td>
+            </tr>
 
-            <h3> Real World Examples </h3>
-            <div style="margin-top=5em;">
-            <table>
-                <tr>
-                <td> Noise Type </td>
-                <td> Noisy Audio (SNR=0) </td>
-                <td> Denoised Noisy Audio </td>
-                </tr>
+            <tr>
+                <td> Our Noise </td>
+                <td><audio controls>
+                    <source src="./assets/real_world_audio/our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/real_world_audio/our_enh.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
 
-                <tr>
-                    <td> Our Noise </td>
-                    <td><audio controls>
-                        <source src="./assets/real_world_audio/our.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                    <td><audio controls>
-                        <source src="./assets/real_world_audio/our_enh.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                </tr>
+            <tr>
+                <td> Backdoor </td>
+                <td><audio controls>
+                    <source src="./assets/real_world_audio/backdoor.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/real_world_audio/backdoor_enh.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
 
-                <tr>
-                    <td> Backdoor </td>
-                    <td><audio controls>
-                        <source src="./assets/real_world_audio/backdoor.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                    <td><audio controls>
-                        <source src="./assets/real_world_audio/backdoor_enh.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                </tr>
+            <tr>
+                <td> Patronus </td>
+                <td><audio controls>
+                    <source src="./assets/real_world_audio/patronus.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/real_world_audio/Patronus_enh.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
 
-                <tr>
-                    <td> Patronus </td>
-                    <td><audio controls>
-                        <source src="./assets/real_world_audio/patronus.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                    <td><audio controls>
-                        <source src="./assets/real_world_audio/Patronus_enh.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                </tr>
+            <tr>
+                <td> A Typical <br> Commercial Device </td>
+                <td><audio controls>
+                    <source src="./assets/real_world_audio/device.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/real_world_audio/Device_enh.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
 
-                <tr>
-                    <td> A Typical <br> Commercial Device </td>
-                    <td><audio controls>
-                        <source src="./assets/real_world_audio/device.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                    <td><audio controls>
-                        <source src="./assets/real_world_audio/Device_enh.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                </tr>
-            </table>
+        <table>
+            <tr>
+                <td> Original Audio <br> (19-198-0001 in Librispeech train-clean-100) </td>
 
-            <table>
-                <tr>
-                    <td> Original Audio (19-198-0000.wav + 19-198-0001.wav in Librispeech train-clean-100) </td>
-                </tr>
-    
-                <tr>
-                    <td><audio controls>
-                        <source src="./assets/real_world_audio/real_world_origin.wav", type="audio/wav">
-                        Your browser does not support the <code>audio</code> element.
-                    </audio></td>
-                </tr>
-                <tr>
-                    <td> <b>Transcript:</b> Northanger Abbey. This little work was finished in the year eighteen o three, and intended for immediate publication. </td>
-                </tr>
-    
-            </table>
+                <td><audio controls>
+                    <source src="./assets/real_world_audio/real_world_origin.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
 
+        <br>
+        <button onclick="show_hide_text('real_world_transcript')" >Click To Show/Hide The Transcript</button>
+        <br>
+        <div id="real_world_transcript" style="display:none"><p><b>Transcript:</b> Northanger Abbey. This little work was finished in the year eighteen o three, and intended for immediate publication.</p></div>
 
     </div>
 </html>
