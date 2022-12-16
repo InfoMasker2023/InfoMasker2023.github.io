@@ -37,7 +37,15 @@
         <font size="5"> <b>Tips:</b> </font>
         <br>
         <font size="3"> &#9733 We recommend <b>not</b> listening to the <b>origin</b> audio samples and not reading the transcript <b>before</b> listening to the noisy audios. The priori knowledge will weaken the jamming effectiveness of these noises for human ear. </font>
+
         <br>
+        <br>
+
+        <font size="3"> &#9733 We recommend using <b>headphones</b> instead of external speakers to listen to these audio examples. </font>
+
+        <br>
+        <br>
+
         <font size="3"> &#9733 The <b>denoised noisy audios</b> are used to demonstrate the <b>robustness</b> of these types of noise against SOTA speech enhancement methods. </font>
     </p>
 
@@ -145,11 +153,35 @@
             The following figure shows the spectrogram of the original audio, the denoised noisy audio jammed by our noise, and the denoised noisy audio jammed by the 3-series speech noise respectively. Compared to the speech noise, our noise retains more noise components after denoising, which reveals the greater robustness of our noise.
         </p>
 
-        <div class ="boxed">
-            <!--img src="assets/introduction_system.pdf" width="800px" height="300px"-->
-            <img src="assets/denoised_spectrogram.png", width="800px">
-    
-        </div>
+        <table>
+            <tr>
+                <td> Our Noise <br> After Denoising </td>
+                <td>
+                    <img src="assets/our.png", width="700px">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td> Origin Audio </td>
+                <td>
+                    <img src="assets/origin.png", width="700px">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td> 3 Series Speech <br> Noise After <br> Denoising </td>
+                <td>
+                    <img src="assets/speech.png", width="700px">
+                </td>
+
+            </tr>
+
+
+
+
+        </table>
 
 
 
