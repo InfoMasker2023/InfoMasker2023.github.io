@@ -178,12 +178,10 @@
 
             </tr>
 
-
-
-
         </table>
 
-
+    <br>
+    <br>
 
     <h3> Digital Domain Example 2 </h3>
     <div style="margin-top=5em;">
@@ -271,6 +269,146 @@
         <br>
         <div id="transcript2" style="display:none"><p><b>Transcript:</b> Approaching the dining table he carefully placed the article in the centre and removed the cloth.</p></div>
 
+    <br>
+    <br>
+
+    <h3> Digital Domain Example 3 </h3>
+        <p>
+            To better illustrate the effectiveness and robustness of our noise, we compare our noise with speech noise in different SNRs. The following audios are denoised noisy audios jammed by different types of noise. Our noise performs much better than others in lower SNRs.
+        </p>
+        <br>
+    <div style="margin-top=5em">
+        <table>
+            <tr>
+            <td> SNR </td>
+            <td> Our Noise </td>
+            <td> 1 Series Speech Noise </td>
+            <td> 3 Series Speech Noise </td>
+            </tr>
+
+            <tr>
+                <td> 0 </td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr0/our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr0/speech_2.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr0/speech_4.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> -1 </td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr-1/our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr-1/speech_2.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr-1/speech_4.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> -2 </td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr-2/our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr-2/speech_2.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr-2/speech_4.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> -3 </td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr-3/our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr-3/speech_2.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr-3/speech_4.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+             <tr>
+                <td> -4 </td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr-4/our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr-4/speech_2.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr-4/speech_4.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+            <tr>
+                <td> -5 </td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr-5/our.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr-5/speech_2.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="./assets/audio_snr/snr-5/speech_4.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+
+
+
+
+
+
+        </table>
+
+        <table>
+            <tr>
+                <td> Original Audio <br> (5105-28241-0017 in Librispeech test-clean) </td>
+
+                <td><audio controls>
+                    <source src="./assets/audio_snr/origin.wav", type="audio/wav">
+                    Your browser does not support the <code>audio</code> element.
+                </audio></td>
+            </tr>
+        </table>
+
+        <br>
+        <button onclick="show_hide_text('transcript3')" >Click To Show/Hide The Transcript</button>
+        <br>
+        <div id="transcript3" style="display:none"><p><b>Transcript:</b> After pondering awhile he said, if we were farther away, I should expect to find a depth of two or three hundred fathoms instead of five fathoms, five fathoms.</p></div>
+
+    </div>
+
+    <br>
+    <br>
 
     <h3> Real World Examples </h3>
         <div style="margin-top=5em;">
@@ -345,6 +483,10 @@
         <button onclick="show_hide_text('real_world_transcript')" >Click To Show/Hide The Transcript</button>
         <br>
         <div id="real_world_transcript" style="display:none"><p><b>Transcript:</b> Northanger Abbey. This little work was finished in the year eighteen o three, and intended for immediate publication.</p></div>
-
     </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
 </html>
